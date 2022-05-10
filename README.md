@@ -1,1 +1,1 @@
-# TFVAE
+# Variational Transformer
