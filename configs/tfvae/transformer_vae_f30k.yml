@@ -1,0 +1,26 @@
+_BASE_: transformer_f30k.yml
+caption_model: tfvae
+reduce_on_plateau: true
+noamopt: false
+learning_rate: 0.00005
+learning_rate_decay_start: -1
+
+batch_size: 16
+
+kl_beta: 0.5
+gmm_num: 1
+fake_prob: 0.15
+fake_seq_start: -1
+
+self_critical_after: -1
+structure_after: 50
+structure_loss_weight: 1
+structure_loss_type: new_self_critical
+
+N_enc: 4
+N_dec: 4
+d_model: 512
+d_ff: 2048
+max_epochs: 100
+save_checkpoint_every: 1500
+train_sample_n: 5

@@ -1,0 +1,30 @@
+_BASE_: transformer.yml
+caption_model: tfvae_parallel
+reduce_on_plateau: true
+reduce_on_plateau_factor: 0.5
+reduce_on_plateau_patience: 3
+noamopt: false
+learning_rate: 0.0001
+learning_rate_decay_start: -1
+
+batch_size: 8
+
+kl_beta: 1.0
+gmm_num: 8
+fake_prob: 0.15
+fake_seq_start: -1
+
+self_critical_after: -1
+structure_after: 15
+structure_loss_weight: 1
+structure_loss_type: new_self_critical
+
+N_enc: 4
+N_dec: 6
+d_model: 512
+d_ff: 2048
+max_epochs: 30
+save_checkpoint_every: 4000
+
+grad_clip_mode: norm
+grad_clip_value: 1.0

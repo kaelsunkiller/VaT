@@ -1,0 +1,15 @@
+_BASE_: vat.yml
+noamopt: false
+noamopt_warmup: 33000
+learning_rate: 0.00001
+learning_rate_decay_rate: 0.5
+learning_rate_decay_every: 3
+learning_rate_decay_start: 15
+
+self_critical_after: -1
+structure_after: 15
+train_sample_n: 5
+structure_loss_weight: 1
+structure_loss_type: new_self_critical
+
+max_epochs: 40
