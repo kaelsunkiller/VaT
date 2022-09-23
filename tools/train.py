@@ -255,7 +255,7 @@ def train(opt):
                 (epoch_done and opt.save_every_epoch):
             # if 1:
                 # eval model
-                eval_kwargs = {'split': 'test',
+                eval_kwargs = {'split': 'val',
                                 'dataset': opt.input_json}
                 eval_kwargs.update(vars(opt))
                 val_loss, predictions, lang_stats = eval_utils.eval_split(
