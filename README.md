@@ -1,5 +1,5 @@
 # Variational Transformer
-Code of paper https://arxiv.org/pdf/2205.14458.pdf
+Code of paper [Variational Transformer: A Framework Beyond the Trade-off between Accuracy and Diversity for Image Captioning](https://arxiv.org/abs/2205.14458)
 
 Merged from https://github.com/ruotianluo/self-critical.pytorch
 
